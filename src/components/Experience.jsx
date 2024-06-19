@@ -21,7 +21,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='object-contain w-6 h-6'
+            className='object-cover w-10 h-10 rounded-full'
           />
         </div>
       }
@@ -34,6 +34,14 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
+
+        <div className="flex flex-row flex-wrap gap-2">
+          { experience.tags.map((tag) => (
+            <span key={ tag.name } className={ `text-[14px] ${tag.color}` }>
+              #{ tag.name }
+            </span>
+          ))}
+          </div>
       </div>
 
       <ul className='mt-5 ml-5 space-y-2 list-disc'>
@@ -46,6 +54,7 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+      
     </VerticalTimelineElement>
   )
 }

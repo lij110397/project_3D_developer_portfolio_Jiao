@@ -21,14 +21,21 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import aispeech from "./company/aispeech.png";
+import shein from "./company/shein.png";
+import horizontal from "./company/horizontal.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import beijingjiaotong from './university/beijingjiaotong.png';
+import ucl from './university/ucl.png';
+import epita from './university/epita.png';
+
+import projectHero from './project/1/blog.png';
+import meditation from './project/2/meditation.png';
+import linkIcon from './link.svg';
 
 export {
   logo,
@@ -52,11 +59,16 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  aispeech,
+  shein,
+  horizontal,
   carrent,
   jobit,
   tripguide,
+  beijingjiaotong,
+  ucl,
+  epita,
+  projectHero,
+  meditation,
+  linkIcon
 };

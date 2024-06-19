@@ -21,12 +21,12 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='object-contain h-9 w-9' />
-          <p className='font-bold text-white text-[18px] cursor-pointer flex'>
-            JIAOLL &nbsp;<span className='hidden sm:block'> | &nbsp;Personal Website</span>
+          <p className='font-bold text-white text-[18px] cursor-pointer flex' title="Click to go back homepage">
+            JIAOLL &nbsp;<span className='hidden lg:block'> | &nbsp;Personal Website</span>
           </p>
         </Link>
 
-        <ul className='flex-row hidden gap-10 list-none sm:flex'>
+        <ul className='flex-row hidden gap-10 list-none md:flex'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -42,7 +42,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='flex items-center justify-end flex-1 sm:hidden'>
+        <div className='flex items-center justify-end flex-1 md:hidden'>
           <img
             src={toggle ? close : menu}
             alt='menu'
