@@ -38,9 +38,19 @@ const NavbarProject = () => {
                 setActive(link.title)
               }}
             >
-              <Link to={link.id === 'home' ? '/' : `#${link.id}`}>
-                {link.title}
-              </Link>
+              {link.id === 'home' ? (
+                <Link
+                  to='/'
+                  onClick={() => {
+                    setActive('')
+                    window.scrollTo(0, 0)
+                  }}
+                >
+                  {link.title}
+                </Link>
+              ) : (
+                <a href={`#${link.id}`}>{link.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -69,9 +79,19 @@ const NavbarProject = () => {
                     setActive(link.title)
                   }}
                 >
-                  <Link to={link.id === 'home' ? '/' : `#${link.id}`}>
-                    {link.title}
-                  </Link>
+                  {link.id === 'home' ? (
+                    <Link
+                      to='/'
+                      onClick={() => {
+                        setActive('')
+                        window.scrollTo(0, 0)
+                      }}
+                    >
+                      {link.title}
+                    </Link>
+                  ) : (
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  )}
                 </li>
               ))}
             </ul>
