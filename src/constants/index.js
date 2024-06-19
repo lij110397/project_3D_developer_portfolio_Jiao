@@ -248,7 +248,7 @@ const experiences = [
       'Conducted and presented Demand analysis of the Intelligent security industry',
       'Managed system Interface Design between Front-end and SaaS layer about face recognition service, familiar with overall system architecture and functional module design',
       'Detected and Refactored existing codes.',
-      'developed 4 modules using NodeJS on Face recognition service independently.',
+      'Developed 4 modules using NodeJS on Face recognition service independently.',
     ],
   },
 ]

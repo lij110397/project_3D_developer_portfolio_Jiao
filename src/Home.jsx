@@ -5,7 +5,7 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
+  ProjectList,
   StarsCanvas,
   Footer,
   Education
@@ -22,7 +22,7 @@ const Home = () => {
         <Education />
         <Experience />
         <Tech />
-        <Works />
+        <ProjectList />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

@@ -17,7 +17,7 @@ const HeroProject = ({ project }) => {
               Role: &nbsp;
               {project.roles.map((role, index) => (
                 <span key={index} className='text-white'>
-                  {role}
+                  {role} &nbsp;
                 </span>
               ))}
             </p>
@@ -44,7 +44,7 @@ const HeroProject = ({ project }) => {
           </div>
           <div className='flex flex-row items-start'>
             <p className='text-[#915eff] uppercase'>Link of the website: &nbsp;</p>
-            <a href={project.link}>
+            <a href={project.link}  onClick={()=>window.open(project.link,'_blank')}>
               <img src={linkIcon} alt='link' className='inline-block w-5 h-5' />
             </a>
           </div>

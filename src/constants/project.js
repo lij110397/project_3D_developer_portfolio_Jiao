@@ -89,7 +89,7 @@ export const projectDetails = [
       },
     ],
     description:
-      'A simplest Meditation website using three and next to build. By clicking the button, you can start a meditation right away',
+      'A simplest Meditation website using threeJS and next to build. By clicking the button, you can start a meditation right away',
     link: 'https://meditation-button-next-three-js.vercel.app/',
     blogs: [
       {
@@ -131,6 +131,10 @@ export const projectDetails = [
 ]
 
 export const projectNavLinks = [
+  {
+    id: 'home',
+    title: 'Home'
+  },
   {
     id: 'project',
     title: 'Project',

@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import About from './About'
 import Tech from './Tech'
 import Experience from './Experience'
-import Works from './Works'
+import ProjectList from './ProjectList'
 import Contact from './Contact'
 import Footer from './Footer'
 import Education from './Education'
@@ -22,7 +22,7 @@ export {
   Education,
   Tech,
   Experience,
-  Works,
+  ProjectList,
   Contact,
   EarthCanvas,
   BallCanvas,

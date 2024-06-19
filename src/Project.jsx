@@ -10,7 +10,7 @@ import PropType from 'prop-types'
 const Project = ({ projectDetails }) => {
   const { id } = useParams()
   const project = projectDetails.find((n) => n.id === Number(id))
-  console.log(project)
+  // console.log(project)
   return (
     <div className='relative z-0 bg-primary'>
       <div className='bg-center bg-no-repeat bg-cover bg-hero-pattern'>

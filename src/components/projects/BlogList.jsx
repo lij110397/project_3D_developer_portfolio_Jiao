@@ -19,7 +19,7 @@ const BlogCard = ({ blog, index }) => {
         className="w-full p-5 border bg-tertiary rounded-2xl">
         
         <div className="flex flex-col gap-2 text-white">
-          <h2 className="text-2xl font-bold hover:underline"><a href={ blog.link } alt={ blog.title }>{ blog.title }</a></h2>
+          <h2 className="text-2xl font-bold hover:underline"><a href={ blog.link } alt={ blog.title }  onClick={()=>window.open(blog.link,'_blank')}>{ blog.title }</a></h2>
           <p>{ blog.description }</p>
           <div className="flex flex-wrap gap-2">{
             blog.tags.map((tag,index) => (

@@ -56,7 +56,7 @@ const ProjectCard = ({
     </motion.div>
   )
 }
-const Works = () => {
+const ProjectList = () => {
   return (
     <SectionWrapper idName='projects'>
       <motion.div variants={textVariant()}>
@@ -84,7 +84,7 @@ const Works = () => {
   )
 }
 
-export default Works
+export default ProjectList
 ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
