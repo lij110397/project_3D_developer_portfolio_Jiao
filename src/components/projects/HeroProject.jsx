@@ -6,7 +6,7 @@ import PropType from 'prop-types'
 
 const HeroProject = ({ project }) => {
   return (
-    <section className='relative w-full h-screen mx-auto' id="project">
+    <section className='relative w-full h-screen mx-auto' id='project'>
       <div
         className={`${styles.paddingX} absolute top-[120px] inset-0 max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-10 h-auto`}
       >
@@ -43,15 +43,33 @@ const HeroProject = ({ project }) => {
             </motion.p>
           </div>
           <div className='flex flex-row items-start'>
-            <p className='text-[#915eff] uppercase'>Link of the website: &nbsp;</p>
-            <a href={project.link}  onClick={()=>window.open(project.link,'_blank')}>
+            <p className='text-[#915eff] uppercase'>
+              Link of the website: &nbsp;
+            </p>
+            <a
+              href={project.link}
+              onClick={() => window.open(project.link, '_blank')}
+            >
               <img src={linkIcon} alt='link' className='inline-block w-5 h-5' />
             </a>
+          </div>
+
+          <div>
+            <ul className='mt-5 ml-5 space-y-2 list-disc'>
+              {project.points.map((point, index) => (
+                <li
+                  key={`experience-point-${index}`}
+                  className='text-white-100 text-[14px] pl-1 tracking-wider'
+                >
+                  {point}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
         <div className='w-full overflow-y-scroll flex-3 max-h-[600px]'>
-          <img src={project.img} alt='projectHero' className="rounded-xl"/>
+          <img src={project.img} alt='projectHero' className='rounded-xl' />
         </div>
       </div>
 
