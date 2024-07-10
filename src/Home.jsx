@@ -8,7 +8,8 @@ import {
   ProjectList,
   StarsCanvas,
   Footer,
-  Education
+  Education,
+  OtherLinks
 } from './components'
 
 const Home = () => {
@@ -22,7 +23,8 @@ const Home = () => {
         <Education />
         <Experience />
         <Tech />
-        <ProjectList />
+      <ProjectList />
+      <OtherLinks />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

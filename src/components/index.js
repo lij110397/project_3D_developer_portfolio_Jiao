@@ -8,6 +8,7 @@ import ProjectList from './ProjectList'
 import Contact from './Contact'
 import Footer from './Footer'
 import Education from './Education'
+import OtherLinks from './OtherLinks'
 import {
   HeroProject,
   BlogList,
@@ -32,5 +33,6 @@ export {
   BlogList,
   Pagination,
   NavbarProject,
-  Footer
+  Footer,
+  OtherLinks
 }

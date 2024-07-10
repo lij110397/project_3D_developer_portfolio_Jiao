@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { textVariant, fadeIn } from '../utils/motion'
 import { educations } from '../constants'
 import properType from 'prop-types'
-// import { Tilt } from 'react-tilt'
 import { useState } from 'react'
 
 const EducationCard = ({
@@ -83,6 +82,11 @@ const Education = () => {
         <p className={styles.sectionSubText}>Study and Degrees</p>
         <h2 className={styles.sectionHeadText}>Eduction.</h2>
       </motion.div>
+
+      <motion.p variants={ fadeIn("", "", 0.1, 1) }
+      className="mt-4 text-secondary leading-[28px] text-[17px] max-w-3xl">
+        Click and Flip the card to find out more about what I learnt in my education experiences.
+      </motion.p>
 
       <div className='flex flex-wrap gap-10 mt-8'>
         {educations.map((education, index) => (

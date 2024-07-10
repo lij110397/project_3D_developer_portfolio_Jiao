@@ -37,6 +37,9 @@ import projectHero from './project/1/blog.png';
 import meditation from './project/2/meditation.png';
 import linkIcon from './link.svg';
 
+import githubLink from './links/github.png'
+import tuchong from './links/tuchong.png' 
+
 export {
   logo,
   backend,
@@ -70,5 +73,7 @@ export {
   epita,
   projectHero,
   meditation,
-  linkIcon
+  linkIcon,
+  githubLink,
+  tuchong
 };
