@@ -54,7 +54,7 @@ const BlogList = ({ project }) => {
           variants={fadeIn('', '', 0.1, 1)}
           className='text-secondary text-[17px] max-w-3xl mt-3 leading-[30px]'
         >
-          There are <span className="text-[#915eff] font-bold">{ project.blogs.length}</span> blogs concluded about tech points I met in the projects.
+          There are <span className="text-[#915eff] font-bold">{ project.blogs.length}</span> blogs about tech points I met in the projects.
         </motion.p>
       </div>
       <div className="flex flex-col items-end gap-10">

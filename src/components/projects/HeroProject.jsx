@@ -26,7 +26,7 @@ const HeroProject = ({ project }) => {
               <span className='text-white'>{project.duration}</span>
             </p>
 
-            <div className='flex gap-1'>
+            <div className='flex flex-wrap gap-1'>
               {project.tags.map((tag, index) => (
                 <span key={index} className={`${tag.color}`}>
                   #{tag.name}
